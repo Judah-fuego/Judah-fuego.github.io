@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Judah Boyce</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="home" class="tab"></div>
+    <div id="projects" class="tab"></div>
+    <div id="contact" class="tab"></div>
+
+    <nav class="navbar">
+        <div class="nav-item">
+            <a href="#home">Home</a>
+        </div>
+        <div class="nav-item">
+            <a href="#projects">Projects</a>
+        </div>
+        <div class="nav-item">
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page page-projects">
+            <h1>Projects</h1>
+            <ul class="list">
+                <li>
+                    <div class="project-title"><a href="https://www.tritonpath.com" target="_blank"
+                            rel="noopener noreferrer">TritonPath.com</a><a class="project-title-date">Aug
+                            2026 - Current</a></div>
+                    <div class="project-description">A UC San Diego Scheduling, Graduation Planning, and Student
+                        Life application. Organically grew to 250+ users and 5,000 weekly page views. Built with Vue,
+                        Supabase, Vercel, Docker
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://github.com/Judah-fuego/hardhack_dishwashers"
+                            target="_blank" rel="noopener noreferrer">Clean
+                            Roommates</a> <a class="project-title-date">Winner @ UCSD
+                            HardHack 2026</a></div>
+                    <div class="project-description">Clean Roommates tracks your roommates dirty dishes and
+                        sends notifications if there are any unclean dishes left in the sink. Attached to a raspberry pi
+                        3
+                        an ultrasonic sensor detects
+                        the dishes and triggers a camera to take photos. Then an objection detection model (yolov5 +
+                        fine-tuning) identifies each dish put into the sink. The images of the dishes are vector
+                        embedded and compared against stored vector embeddings of the dishes. Once the owner is matched
+                        automated notifications are pushed until the dishes are removed from the sink.
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://ist-cat.vercel.app" target="_blank"
+                            rel="noopener noreferrer">Ist Cat</a>
+                    </div>
+                    <div class="project-description">
+                        A 3-level browser platformer I made for Valentine's Day, with character select, sprite
+                        animation, platforms, spikes, lava, and scene transitions. I learned Phaser, arcade
+                        physics, collisions, the game loop, and how to wire keyboard controls, audio, and
+                        multiple scenes in a browser game.
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://pypi.org/project/alpha-vantage-client/" target="_blank"
+                            rel="noopener noreferrer">Alpha Vantage
+                            Client</a>
+                    </div>
+                    <div class="project-description">
+                        A published PyPI package for the Alpha Vantage API with 1,000+ downloads. Configuration-driven
+                        Python client covering stocks, forex, crypto, commodities, economic indicators, technical
+                        indicators, and news sentiment, with type hints, endpoint discovery, and intelligent defaults.
+                        <span class="pip-install">pip install alpha-vantage-client</span>
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://github.com/Judah-fuego/cli-trading-app-cpp"
+                            target="_blank" rel="noopener noreferrer">CLI Trading
+                            App</a>
+                    </div>
+                    <div class="project-description">
+                        A real-time command line trading application in C++ using jsoncpp and curl.
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://github.com/Judah-fuego/betterweatherai" target="_blank"
+                            rel="noopener noreferrer">BetterWeatherAI</a>
+                        <a class="project-title-date">July 2024
+                            - October 2024</a>
+                    </div>
+                    <div class="project-description">
+                        My second website for the weather. There is no AI involved. I learned
+                        how to properly design using Figma, utilize APIs (Nasa, Supabase), connect Auth, DBs, and build
+                        using Next.js
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://github.com/Judah-fuego/seniorWebsite" target="_blank"
+                            rel="noopener noreferrer">Senior Website</a>
+                    </div>
+                    <div class="project-description">
+                        My high school senior capstone website — the first site I built.
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="page page-contact">
+            <h1>Contact</h1>
+            <ul class="list">
+                <li><a class="bold">Email:</a> <a href="mailto:judahworkflow@gmail.com" target="_blank"
+                        rel="noopener noreferrer">judahworkflow@gmail.com</a></li>
+                <li><a class="bold">GitHub:</a> <a href="https://github.com/Judah-fuego" target="_blank"
+                        rel="noopener noreferrer">Judah-fuego</a></li>
+                <li><a class="bold">LinkedIn:</a> <a href="https://www.linkedin.com/in/judah-boyce-1a0b24301"
+                        target="_blank" rel="noopener noreferrer">judah-boyce</a></li>
+            </ul>
+        </section>
+
+        <section class="page page-home">
+            <div class="intro">
+                <h1>Hey, I'm Judah</h1>
+                <div class="intro-row">
+                    <img class="portrait" src="judah.jpeg" alt="Judah Boyce" width="140" height="162">
+                    <ul class="list">
+                        <li><a class="bold">Education:</a> 3rd year @ UCSD</li>
+                        <li><a class="bold">Interests:</a> Database Systems, ML/AI, WebDev </li>
+                        <li><a class="bold">Hobbies:</a> Soccer, Rock Climbing, Eating, Music, Surfing, Building Stuff
+                        </li>
+                        <li><a class="bold">Email:</a> <a href="mailto:judahworkflow@gmail.com" target="_blank"
+                                rel="noopener noreferrer">judahworkflow@gmail.com</a></li>
+                        <li><a class="bold">Github:</a> <a href="https://github.com/Judah-fuego" target="_blank"
+                                rel="noopener noreferrer">judah_fuego</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <h2>How I arrived at Computer Science?</h2>
+            <p class="bio-description">
+                I was introduced to the world of computers by a friend my senior year of high school. He was a tech
+                youtuber
+                and showed me how to install my first Linux Distro (MintOS) on my destroyed Acer Aspire. Then that same
+                year I
+                built a simple react website
+                for a senior capstone project. Even though the website had a terrible UI and tabs that didn't work my
+                fellow
+                classmates were in awe and had a good laugh at the gallery of photos and videos I had included on the
+                website. The enjoyment I got from building that first website and the joy created encouraged me to keep
+                building. Going into my first year at community college I took a leap and attended Hackathons at
+                SMU, Princeton, Santa Barbra, and UCSD, got an internship and kept building for fun.
+            </p>
+
+            <h2>Project Highlights</h2>
+            <ul class="list">
+                <li>
+                    <div class="project-title"><a href="https://www.tritonpath.com" target="_blank"
+                            rel="noopener noreferrer">TritonPath.com</a><a class="project-title-date">Aug
+                            2026 - Current</a></div>
+                    <div class="project-description">A UC San Diego Scheduling, Graduation Planning, and Student
+                        Life application. Organically grew to 250+ users and 5,000 weekly page views. Built with Vue,
+                        Supabase, Vercel, Docker
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://github.com/Judah-fuego/hardhack_dishwashers"
+                            target="_blank" rel="noopener noreferrer">Clean
+                            Roommates</a> <a class="project-title-date"> Winner @ UCSD
+                            HardHack 2026</a></div>
+                    <div class="project-description">Clean Roommates tracks your roommates dirty dishes and
+                        sends notifications if there are any unclean dishes left in the sink. Attached to a raspberry pi
+                        3
+                        an ultrasonic sensor detects
+                        the dishes and triggers a camera to take photos. Then an objection detection model (yolov5 +
+                        fine-tuning) identifies each dish put into the sink. The images of the dishes are vector
+                        embedded and compared against stored vector embeddings of the dishes. Once the owner is matched
+                        automated notifications are pushed until the dishes are removed from the sink.
+                    </div>
+                </li>
+                <br />
+                <li>
+                    <div class="project-title"><a href="https://github.com/Judah-fuego/betterweatherai" target="_blank"
+                            rel="noopener noreferrer">BetterWeatherAI</a>
+                        <a class="project-title-date">July 2024
+                            - October 2024</a>
+                    </div>
+                    <div class="project-description">
+                        My second website for the weather. There is no AI involved. I learned
+                        how to properly design using Figma, utilize APIs (Nasa, Supabase), connect Auth, DBs, and build
+                        using Next.js
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

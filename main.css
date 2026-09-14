@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 20px 2rem;
+    background: white;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+.intro {
+    max-width: 40rem;
+}
+
+.intro-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding-left: 2.5rem;
+}
+
+.portrait {
+    width: 7.5rem;
+    height: 8.6rem;
+    object-fit: cover;
+    object-position: 36% 0%;
+    flex-shrink: 0;
+}
+
+.intro .list {
+    margin: 0;
+    padding-left: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+.list {
+    max-width: 40rem;
+    font-size: 16px;
+    list-style: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bio-description {
+    max-width: 40rem;
+    padding-left: 2.5rem;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.project-title-date {
+    font-weight: 200;
+    font-size: small;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.pip-install {
+    display: block;
+    margin-top: 0.35em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #333;
+}
+
+.projects-scroll {
+    max-height: 12rem;
+    overflow-y: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 2.5rem;
+}
+
+.nav-item {
+    padding: 0.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2 {
+    text-wrap: pretty;
+}
+
+h1 {
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+.tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.page {
+    display: none;
+}
+
+.page-home,
+#home:target~main .page-home,
+#projects:target~main .page-projects,
+#contact:target~main .page-contact {
+    display: block;
+}
+
+#projects:target~main .page-home,
+#contact:target~main .page-home {
+    display: none;
+}
+
+#home:target~.navbar a[href="#home"],
+body:not(:has(.tab:target)) .navbar a[href="#home"],
+#projects:target~.navbar a[href="#projects"],
+#contact:target~.navbar a[href="#contact"] {
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 0 16px 2rem;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.45rem;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+        text-wrap: balance;
+    }
+
+    .list {
+        padding-left: 0;
+        font-size: 15px;
+    }
+
+    .bio-description {
+        padding-left: 0;
+    }
+
+    .intro-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.85rem;
+        padding-left: 0;
+    }
+
+    .portrait {
+        width: 7rem;
+        height: 8rem;
+    }
+
+    .project-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.1rem;
+    }
+
+    .project-title-date {
+        white-space: normal;
+    }
+}
