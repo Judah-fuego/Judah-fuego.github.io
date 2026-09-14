@@ -20,7 +20,7 @@ body {
 }
 
 .intro {
-    max-width: 40rem;
+    max-width: 41rem;
 }
 
 .intro-row {
@@ -70,19 +70,21 @@ a:active {
 
 .project-title {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
     gap: 0.75rem;
 }
 
-.project-title > a:first-child {
-    flex-shrink: 0;
+.project-title>a:not(.project-title-date) {
+    flex: 0 0 auto;
     white-space: nowrap;
 }
 
 .project-title-date {
     font-weight: 200;
     font-size: small;
+    flex: 0 1 auto;
     margin-left: auto;
     text-align: right;
     white-space: nowrap;
@@ -208,7 +210,6 @@ body:not(:has(.tab:target)) .navbar a[href="#home"],
     }
 
     .project-title-date {
-        flex: 1 1 0;
         min-width: 0;
         white-space: normal;
     }
